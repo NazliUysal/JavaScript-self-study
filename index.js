@@ -205,6 +205,151 @@ firstName = fullName.slice(0, fullName.indexOf(" "));
 //begin at where space is +1
 lastName = fullName.slice(fullName.indexOf(" ") + 1);
 console.log(firstName);
+
+
+//Method chaining - calling one method after another in one continuous line of code
+
+let userName = "nazli";
+let letter = userName.charAt(0).toLocaleUpperCase();
+console.log(letter);
+
+
+
+// IF STATEMENTS
+
+let age = 20;
+
+if(age >= 65){
+    console.log("You are ANCIENT!");
+}
+else if(age >= 18){
+    console.log("You are an adult.");
+}
+else if(age < 0){
+    console.log("In womb!")
+}
+else{
+    console.log("You are a child.");
+}
+
+let online = true;
+if(online){
+    console.log("You are online!");
+}
+else{
+    console.log("You are offline");
+}
+
+
+// Checked property
+document.getElementById("myButton").onclick = function(){
+    const myCheckBox = document.getElementById("myCheckBox");
+    const visaBtn = document.getElementById("visaBtn");
+    const masterBtn = document.getElementById("masterBtn");
+    const paypalBtn = document.getElementById("paypalBtn");
+
+    if(myCheckBox.checked){
+       console.log("Subscribed.");
+    }
+    else{
+        console.log("You are not subscribed.");
+    }
+
+    if (visaBtn.checked){
+        console.log("You are paying with a visa.")
+    }
+    else if(masterBtn.checked){
+        console.log("You are paying with a mastercard.")
+    }
+    else if(paypalBtn.checked){
+        console.log("You are paying with paypal.")
+    }
+    else{
+        console.log("You must select a payment type!")
+    }
+}
+
+//Swicthes
+//more efficient than if statements
+
+let letterGrade = "A";
+
+switch(letterGrade){
+    case "A":
+        console.log("You did great!");
+        break;
+    case "B":
+        console.log("You did good!");
+        break;
+    case "C":
+        console.log("You did okay!");
+        break;
+    case "D":
+        console.log("You passed!");
+        break;
+    case "F":
+        console.log("You failed :(");
+        break;
+    default:
+        console.log(letterGrade, "is not a letter grade.");
+}
+
+let grade = "95";
+
+switch(true){
+    case grade >= 90:
+        console.log("You did great!");
+        break;
+    case grade >= 80:
+        console.log("You did good!");
+        break;
+    case grade >= 70:
+        console.log("You did okay!");
+        break;
+    case grade >= 60:
+        console.log("You passed!");
+        break;
+    case grade < 60:
+        console.log("You failed :(");
+        break;
+    default:
+        console.log(grade, "is not a grade.");
+}
+
+
+// AND &&
+// OR ||
+
+let temp = 20;
+let sunny = false;
+
+if(temp > 0 && temp <30 && sunny){
+    console.log('The weather is good.');
+}else{
+    console.log('The weather is bad.');
+}
+
+if (temp <=0 || temp >= 30){
+    console.log('The weather is bad.');
+}else{
+    console.log('The weather is good.');
+}
 */
 
-//Method chaining
+//! NOT - reverse condition
+let temp = -15;
+let sunny = true;
+
+if (!(temp > 0)){
+    console.log("It's cold outside");
+}
+else{
+    console.log("It's warm outside");
+}
+
+if (!sunny){
+    console.log("It's cloudy outside");
+}
+else{
+    console.log("it's sunny outside")
+}
