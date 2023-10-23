@@ -334,7 +334,6 @@ if (temp <=0 || temp >= 30){
 }else{
     console.log('The weather is good.');
 }
-*/
 
 //! NOT - reverse condition
 let temp = -15;
@@ -353,3 +352,5 @@ if (!sunny){
 else{
     console.log("it's sunny outside")
 }
+
+*/
